@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.157.0
+      HUGO_VERSION: 0.166.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -30,7 +30,7 @@ jobs:
           sudo dpkg -i "${RUNNER_TEMP}/hugo.deb"
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           submodules: recursive
           fetch-depth: 0
