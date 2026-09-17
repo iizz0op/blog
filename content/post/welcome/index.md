@@ -11,4 +11,4 @@ tags = ["Hugo", "GitHub Pages"]
 
 这个站点使用 [Hugo](https://gohugo.io/) 和 Stack 主题构建，并通过 GitHub Pages 发布。
 
-接下来，我会在这里记录学习、技术与生活。
+接下来，我会在这里记录学习、技术与生活，希望能和大家交流。

@@ -1,7 +1,7 @@
 baseURL = "https://iizz0op.github.io/blog/"
 locale = "zh-cn"
 defaultContentLanguage = "zh"
-title = "iizz0op's Blog"
+title = "iizz0op"
 theme = "hugo-theme-stack"
 hasCJKLanguage = true
 
@@ -17,8 +17,9 @@ mainSections = ["post"]
 rssFullContent = true
 
 [params.sidebar]
-emoji = "✍️"
-subtitle = "记录学习、技术与生活"
+avatar = "/blog/img/avatar.png"
+emoji = "🌱"
+subtitle = "To be a scientist who discovers, and an engineer who builds."
 
 [params.article]
 toc = true
@@ -34,11 +35,47 @@ enabled = false
 [params.widgets]
 homepage = [
     { type = "search" },
-    { type = "archives", params = { limit = 5 } },
-    { type = "categories", params = { limit = 10 } },
     { type = "tag-cloud", params = { limit = 10 } },
+    { type = "categories", params = { limit = 10 } },
+    { type = "archives", params = { limit = 5 } },
 ]
 page = [{ type = "toc" }]
+
+[[menu.main]]
+identifier = "home"
+name = "主页"
+pageRef = "/"
+weight = 10
+
+[menu.main.params]
+icon = "home"
+
+[[menu.main]]
+identifier = "posts"
+name = "文章"
+pageRef = "/post"
+weight = 20
+
+[menu.main.params]
+icon = "archives"
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+pageRef = "/page/search"
+weight = 30
+
+[menu.main.params]
+icon = "search"
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+pageRef = "/page/about"
+weight = 40
+
+[menu.main.params]
+icon = "user"
 
 [[menu.social]]
 identifier = "github"
